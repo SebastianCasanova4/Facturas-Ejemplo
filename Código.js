@@ -8,7 +8,7 @@ function onOpen() {
 
 function showSidebar() {
   var html = HtmlService.createHtmlOutputFromFile('Page')
-      .setTitle('Menú');
+      .setTitle('Menú prueba');
   SpreadsheetApp.getUi()
       .showSidebar(html);
 }
