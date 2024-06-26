@@ -8,7 +8,7 @@ function onOpen() {
 
 function showSidebar() {
   var html = HtmlService.createHtmlOutputFromFile('Page')
-      .setTitle('Menú prueba');
+      .setTitle('Menú prueba no');
   SpreadsheetApp.getUi()
       .showSidebar(html);
 }
@@ -28,5 +28,6 @@ function openClientesSheet() {
 function openProductosSheet() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName("Productos");
-  SpreadsheetApp.setActiveSheet(sheet);
+  SpreadsheetApp.setActiveSheet(sheet);ç
+  
 }
