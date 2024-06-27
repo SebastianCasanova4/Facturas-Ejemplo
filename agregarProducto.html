@@ -1,29 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agregar producto</title>
     <style>
-        body, html {
+        body,
+        html {
             height: 100%;
             margin: 0;
             display: flex;
             justify-content: center;
             align-items: center;
         }
+
         h1 {
             text-align: center;
         }
+
         form {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding-bottom: 100px;
         }
+
+        .header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            background-color: #f1f1f1;
+            /* Fondo del header */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Sombra del header */
+            position: fixed;
+            /* Fija el header en la parte superior */
+            top: 0;
+        }
+
+        .header img {
+            height: 60px;
+            /* Ajusta la altura del logo según sea necesario */
+            margin-right: 10px;
+        }
+
+        .header h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+            /* Color del texto */
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
+    <div class="header">
+        <img src="https://picsum.photos/300/300" alt="Logo">
+        <h2>FacturasApp</h2>
+    </div>
     <div class="container">
         <h1>Agregar producto</h1>
         <form>
@@ -40,4 +77,5 @@
         </form>
     </div>
 </body>
+
 </html>
