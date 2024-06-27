@@ -66,6 +66,10 @@
       function openProductos(){
         google.script.run.openProductosSheet();
       }
+
+      function showPreProductos(){
+        google.script.run.showPreProductos();
+      }
     </script>
 </head>
 <body>
@@ -74,9 +78,7 @@
       <div class="btn-group">
         <button onclick="openFactura()">Factura</button>
         <button onclick="openClientes()">Clientes</button>
-        <a href="preProductos.html">
-          <button>Productos</button>
-        </a>
+        <button onclick="showPreProductos()">Productos</button>
         <input class="exit" type="button" value="Close" onclick="google.script.host.close()"/>
       </div>
     </div>

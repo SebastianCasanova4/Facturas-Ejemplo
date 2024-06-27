@@ -9,10 +9,23 @@ function onOpen() {
 function showSidebar() {
   var html = HtmlService.createHtmlOutputFromFile('main')
       .setTitle('Menú prueba');
-  SpreadsheetApp.getUi()
+      SpreadsheetApp.getUi()
       .showSidebar(html);
+    }
+function showPreProductos() {
+  var html = HtmlService.createHtmlOutputFromFile('preProductos')
+    .setTitle('Productos');
+  SpreadsheetApp.getUi()
+    .showSidebar(html);
 }
 
+function showAggProductos() {
+  var html = HtmlService.createHtmlOutputFromFile('agregarProducto')
+    .setTitle('Agregar Productos');
+  SpreadsheetApp.getUi()
+    .showSidebar(html);
+}
+    
 function openFacturaSheet() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName("PreFactura");
@@ -29,5 +42,5 @@ function openProductosSheet() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sheet = ss.getSheetByName("Productos");
   SpreadsheetApp.setActiveSheet(sheet);ç
-  
 }
+

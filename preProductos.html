@@ -58,14 +58,17 @@
         function openProductos(){
             google.script.run.openProductosSheet();
         }
+
+        function openAgregarProducto(){
+            google.script.run.showAggProductos();
+        }
+
       </script>
 </head>
 <body>
     <div class="btn-group">
         <button onclick="openProductos()">Lista de productos</button>
-        <a href="agregarProducto.html">
-          <button >Agregar producto</button>
-        </a>
+        <button onclick="openAgregarProducto()">Agregar producto</button>
         <input class="exit" type="button" value="Close" onclick="google.script.host.close()"/>
       </div>
 </body>
