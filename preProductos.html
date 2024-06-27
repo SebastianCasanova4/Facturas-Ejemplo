@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preformulario</title>
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .container {
+          text-align: center;
+        }
+        .btn-group {
+          width: 300px; /* Puedes ajustar el ancho según sea necesario */
+          margin: 0 auto;
+        }
+        .btn-group button {
+          background-color: #04AA6D; /* Green background */
+          border: 1px solid green; /* Green border */
+          color: white; /* White text */
+          padding: 10px 24px; /* Some padding */
+          cursor: pointer; /* Pointer/hand icon */
+          width: 100%; /* Full width */
+          text-align: center; /* Center text */
+          display: block; /* Make the buttons appear below each other */
+        }
+        .btn-group button:not(:last-child) {
+          border-bottom: none; /* Prevent double borders */
+        }
+        .btn-group button:hover {
+          background-color: #3e8e41;
+        }
+        .exit {
+          display: block;
+          width: 100%;
+          margin-top: 10px;
+          background-color: #f44336; /* Red background */
+          border: 1px solid #f44336; /* Red border */
+          padding: 10px 24px; /* Some padding */
+          color: white; /* White text */
+        }
+        .exit:hover{
+          background-color: #C62727;
+        }
+        h1 {
+          text-align: center;
+        }
+        a {
+          text-decoration: none;
+        }
+      </style>
+      <script>
+        function openProductos(){
+            google.script.run.openProductosSheet();
+        }
+      </script>
+</head>
+<body>
+    <div class="btn-group">
+        <button onclick="openProductos()">Lista de productos</button>
+        <a href="agregarProducto.html">
+          <button >Agregar producto</button>
+        </a>
+        <input class="exit" type="button" value="Close" onclick="google.script.host.close()"/>
+      </div>
+</body>
+</html>
