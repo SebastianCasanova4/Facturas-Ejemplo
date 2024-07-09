@@ -106,12 +106,10 @@
   <script>
     function openFactura() {
       google.script.run.openFacturaSheet();
+      google.script.run.showMenuFactura();
     }
     function openClientes() {
       google.script.run.openClientesSheet();
-    }
-    function openProductos() {
-      google.script.run.openProductosSheet();
     }
     function showPreProductos() {
       google.script.run.showPreProductos();
@@ -121,8 +119,7 @@
 
 <body>
   <div class="header">
-    <img src="https://picsum.photos/300/300" alt="Logo">
-    <h2>FacturasApp</h2>
+    <img src="https://raw.githubusercontent.com/SebastianCasanova4/Facturas-Ejemplo/master/Logotipo%20FacturasApp.svg" alt="Logo">
   </div>
   <div class="container">
     <h1>Menú facturas</h1>
